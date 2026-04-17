@@ -1,0 +1,138 @@
+:root {
+    --background-color: #050f12;
+    --accent-color: #22d3ee;
+    --text-color: #e0f7fa;
+    --text-color-secondary: #4a7a85;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+}
+
+nav .logo {
+    color: var(--accent-color);
+}
+
+nav ul a:hover {
+    color: var(--accent-color);
+}
+
+#stack, #projects {
+    padding: 80px 32px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    padding: 80px 32px;
+    min-height: 40vh
+}
+
+#hero h1 {
+    font-size: 48px;
+}
+
+#hero p {
+    margin-top: 30px;
+    color: var(--text-color-secondary);
+}
+
+.hero-buttons {
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.btn-primary, .btn-outline {
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+#stack ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#stack ul li {
+    background-color: #0e2d35;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 10px;
+    border-radius: 15px;
+    list-style: none;
+}
+
+#stack h2, #projects h2 {
+    margin-bottom: 30px;
+}
+
+.wip {
+    color: var(--accent-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-top: 1px solid var(--accent-color);
+}
+
+footer p {
+    color: var(--text-color-secondary);
+}
+
+footer span {
+    color: var(--accent-color);
+}
+
+.hero-wheel img {
+    width: 450px;
+    animation: girar 8s linear infinite;
+}
+
+.hero-wheel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.hero-content {
+    flex: 1;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
