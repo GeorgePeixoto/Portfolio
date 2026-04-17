@@ -142,4 +142,10 @@ footer span {
     #hero {
         flex-direction: column
     }
+    .hero-wheel img {
+        width: 200px;
+    }
+    #hero h1 {
+        font-size: 32px;
+    }
 }
