@@ -136,3 +136,10 @@ footer span {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+@media (max-width: 768px) {
+    /* CSS que só vale em telas menores que 768px */
+    #hero {
+        flex-direction: column
+    }
+}
